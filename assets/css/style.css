@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Racing+Sans+One&display=swap');
+
+/*CSS Variables*/
+:root{
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Racing sans one", sans-serif;
+}
+
+/* Global styles */
+
+body {
+    font-family: var(--primary-font);
+
+}
+h1, h2, h3{
+    font-family: var(--secondary-font);
+}
+
+/*Hero section*/
+
+#hero{
+    height:600px;
+    width:100%; 
+    background: url("../images/boxed-water-is-better-y-TpYAlcBYM-unsplash.jpg") no-repeat center center/cover;
+    position: relative;
+    
+}
+
+#cover-text{
+    text-align: center;
+    margin-top: 100px;
+    
+    
+}
+#cover-text h1{
+    font-size: 80px;
+    display: inline-block;
+    
+    
+}
+#cover-text p {
+    width: 50%;
+    
+    margin: 0 auto; /* Centrerar elementet horisontellt */
+    display: inline-block;
+}
+.hero-discount-button{
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    justify-content: center;
+}
+.discount-text {
+    background-color: orange;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px 20px;
+    text-align: center; /* Centrera texten i blocket */
+    margin: 0 auto; /* Centrerar blocket horisontellt */
+}
+button {
+    background-color: orange;
+    color: white; /* För att texten på knappen ska synas tydligt */
+    padding: 10px 20px; /* Justera knappens storlek */
+    border: none; /* Ta bort standard kantlinjer */
+    border-radius: 5px; /* Lägger till rundade hörn */
+    cursor: pointer; /* Gör så att muspekaren blir en hand när man hovrar */
+}
+/*Footer*/
+#contact{
+    background-color:rgb(39, 39, 41);
+    color: white;
+}
+#contact .table-dark * {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    #cover-text p {
+        width: 80%;  /* Öka bredden på mindre skärmar */
+    }
+   
+}
