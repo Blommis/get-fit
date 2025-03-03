@@ -10,26 +10,34 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top: 60px;
 
 }
 h1, h2, h3{
     font-family: var(--secondary-font);
 }
 
+/*Navbar*/
+.navbar-brand i {
+    font-size: 2rem; /* makes the logo bigger */
+}
+
+
 /*Hero section*/
 
 #hero{
     height:600px;
     width:100%; 
-    background: url("../images/boxed-water-is-better-y-TpYAlcBYM-unsplash.jpg") no-repeat center center/cover;
+    background: url("../images/corey-young-XTktUgGYEkI-unsplash.jpg") no-repeat center center/cover;
     position: relative;
-    
+    color: white;
 }
 
 #cover-text{
     text-align: center;
     margin-top: 100px;
-    
+    display: flex;
+    flex-direction: column;
     
 }
 #cover-text h1{
@@ -38,13 +46,13 @@ h1, h2, h3{
     
     
 }
+
 #cover-text p {
     width: 50%;
-    
-    margin: 0 auto; /* Centrerar elementet horisontellt */
+    margin: 0 auto; /* added so element be centered*/
     display: inline-block;
 }
-.hero-discount-button{
+.hero-button{
     display: flex;
     flex-direction: row;
     gap: 110px;
@@ -55,16 +63,86 @@ h1, h2, h3{
     display: inline-block;
     padding: 20px;
     border-radius: 10px 20px;
-    text-align: center; /* Centrera texten i blocket */
-    margin: 0 auto; /* Centrerar blocket horisontellt */
+    text-align: center; 
+    margin: 0 auto; 
+    
 }
-button {
+.btn-dark {
     background-color: orange;
-    color: white; /* För att texten på knappen ska synas tydligt */
-    padding: 10px 20px; /* Justera knappens storlek */
-    border: none; /* Ta bort standard kantlinjer */
-    border-radius: 5px; /* Lägger till rundade hörn */
-    cursor: pointer; /* Gör så att muspekaren blir en hand när man hovrar */
+}
+/*About us section*/
+
+#about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Adjust paragraph width and centering */
+#about .col-12 {
+    text-align: center; /* Ensures text is centered */
+    margin: 0 auto; /* Centers the column horizontally */
+}
+
+#about p {
+    width: 100%;  /* You can adjust the width */
+    margin: 0 auto;  /* Centers the paragraph horizontally */
+    display: block;  /* Ensures paragraph is displayed as a block */
+}
+
+/*Gallery*/
+#gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the list */
+.gallery-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
+}
+
+/* Stilar för varje bild */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effekt när muspekaren är över bilden */
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/*Sign up form- section*/
+#signup-form{
+    display: flex;
+    flex-direction: column;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    margin-left: 10px;
+}
+.sign-upinfo{
+    text-align: center;
+     
+}
+.signbuttons .btn-dark{
+    margin-right: 10px;
 }
 /*Footer*/
 #contact{
@@ -75,9 +153,35 @@ button {
     background-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #cover-text p {
         width: 80%;  /* Öka bredden på mindre skärmar */
     }
+    
    
+}
+
+@media screen and (min-width: 660px){
+#hero{
+    max-height: 500px;
+}
+
+
+
+}
+@media screen and (min-width: 400px){
+    .signup-container{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+       
+        margin-left: 100px;
+    }
+    .sign-upinfo{
+       text-align: center;
+        font-size: larger;
+    }
+    .sign-upinfo h1{
+        font-size: 300%;
+    }
 }
