@@ -110,6 +110,8 @@
             </div>
         </div>
     </section>
+    
+      
 </main>
    
     <!-- Footer / contact section -->
@@ -118,33 +120,49 @@
         <div class="container section">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <h2 class="display-6">Contact us!</h2>
+                    <h2 class="display-6">Contact us</h2>
+                    <ul id="new-contact"  >
+                        <li><i class="fa-solid fa-phone"></i>
+                            <br>
+                            <p><strong>123456789</strong></p></li>
+                            
+                        <li><i class="fa-regular fa-paper-plane"></i> 
+                            <br>
+                            <p><strong>getfit@getfit.com</strong></p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <br>
+                            <p><strong>Fit City, 12345</strong></p>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Contact info -->
+                <!-- newsletter and Opening times -->
                 <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Contact info</h3>
-                    <address>
-                        <strong><i class="fa-solid fa-location-dot"></i> Get fit</strong><br>
-                        123 street<br>
-                        Fit City, 12345
-                    </address>
-                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                        <i class="fa-regular fa-paper-plane"></i> getfit@getfit.co
-                    </p>
-                    <div class="social-links my-4">
-                        <a href="https://www.instagram.com" target="_blank"
-                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com" target="_blank"
-                            aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
-                                class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
-                            rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                    
+                    <form id="newsletter-form" method="GET" action="action_page.php" >
+                        <div class="container">
+                          <h2>Subscribe to our Newsletter</h2>
+                          <p>Be the first one to read our news!</p>
+                        </div>
+                      
+                        <div class="subscribe-container">
+                          <input type="text" name="name" id="name" placeholder="Name" required>
+                          <input type="email" placeholder="Email" name="email_adress" id="email-address" required>
+                          <label>
+                            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                          </label>
+                        </div>
+                      
+                        <div class="subscribe-container">
+                            
+                            <button type="submit" class="btn btn-dark btn-sm">Subscribe</button>
+                        </div>
+                      </form>
                 </div>
-
-                <!-- Opening times -->
-                <div class="col-12 col-md-6 col-xl-4">
+                
+                 <!-- Opening times -->
+                 <div class="col-12 col-md-6 col-xl-4" class="opening-times">
                     <h3 class="sub-heading-color">Opening times</h3>
                     <table class="table table-dark">
                         <thead>
@@ -177,8 +195,31 @@
                         </tbody>
                     </table>
                 </div>
+                
+               
+                
+
+               
             </div>
         </div>
+        <ul id="new-contact"  >
+            <li><i class="fa-brands fa-instagram"></i>
+                <a href="http://www.instagram.com/" target="_blank" rel="noopener" 
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    </a>
+            </li>
+            <li><a href="http://www.twitter.com/" target="_blank" rel="noopener" 
+                aria-label="Visit our Twitter page (opens in a new tab)">
+                <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="http://www.facebook.com/" target="_blank" rel="noopener" 
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+        
+        
     </footer>
 
     
