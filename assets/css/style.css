@@ -184,6 +184,10 @@ h1, h2, h3{
     background-color:rgb(39, 39, 41);
     color: white;
     padding-top: 10px;
+    
+}
+.opening-times{
+    text-align: center;
 }
 #contact .table-dark * {
     background-color: transparent;
@@ -208,12 +212,39 @@ h1, h2, h3{
 }
 /*newsletter*/
 #newsletter-form{
-    background-color: rgb(248, 246, 242);
-    color:black;
+    background-color: transparent;
+    color:white;
     padding-bottom: 10px;
-    padding-left: 5px;
-    border:10px;
-    border-radius: 5px;
+    
+  
+}
+
+.subscribe-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    
+}
+.subscribe-container .btn-dark{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#success-message {
+    display: none;
+    
+    font-size: larger;
+    margin-top: 10px;
+}
+
+:target#success-message {
+    display: block;
 }
 
 

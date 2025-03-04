@@ -140,8 +140,8 @@
                 <!-- newsletter and Opening times -->
                 <div class="col-12 col-md-6 col-xl-4">
                     
-                    <form id="newsletter-form" method="GET" action="action_page.php" >
-                        <div class="container">
+                    <form id="newsletter-form" method="GET" action="#success-message" >
+                        <div class="subscribe-container">
                           <h2>Subscribe to our Newsletter</h2>
                           <p>Be the first one to read our news!</p>
                         </div>
@@ -149,9 +149,7 @@
                         <div class="subscribe-container">
                           <input type="text" name="name" id="name" placeholder="Name" required>
                           <input type="email" placeholder="Email" name="email_adress" id="email-address" required>
-                          <label>
-                            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                          </label>
+                         
                         </div>
                       
                         <div class="subscribe-container">
@@ -159,11 +157,17 @@
                             <button type="submit" class="btn btn-dark btn-sm">Subscribe</button>
                         </div>
                       </form>
+
+                      <!-- success message -->
+                <div id="success-message">
+                Thank you for subscribing to our newsletter!
+                </div>
+
                 </div>
                 
                  <!-- Opening times -->
                  <div class="col-12 col-md-6 col-xl-4" class="opening-times">
-                    <h3 class="sub-heading-color">Opening times</h3>
+                    <h3 class="opening-times">Opening times</h3>
                     <table class="table table-dark">
                         <thead>
                             <tr>
