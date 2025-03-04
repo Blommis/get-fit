@@ -70,6 +70,22 @@ h1, h2, h3{
 .btn-dark {
     background-color: orange;
 }
+
+/*Productcards section*/
+.silver-title{
+    color:silver;
+}
+.gold-title{
+    color:gold;
+}
+.pricetag{
+    color: red;
+    font-size: larger;
+}
+.card-body{
+    background-color: rgba(243, 237, 228, 0.151);
+}
+
 /*About us section*/
 
 #about {
@@ -184,4 +200,7 @@ h1, h2, h3{
     .sign-upinfo h1{
         font-size: 300%;
     }
+}
+@media screen and (min-width:290px){
+    
 }
