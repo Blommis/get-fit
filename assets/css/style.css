@@ -68,7 +68,7 @@ h1, h2, h3{
     
 }
 .btn-dark {
-    background-color: orange;
+    background-color: #FFD43B;
 }
 
 /*Productcards section*/
@@ -87,51 +87,6 @@ h1, h2, h3{
 }
 
 /*Classes section*/
-#classes {
-    padding: 30px 0;
-    text-align: center;
-}
-.class-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
-}
-
-/*Title*/
-.section-title{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    
-}
-/*Class Card*/
-.class{
-    background-color: #f8f8f8;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.class-card{
-    width: 30%;
-    text-align: center;
-}
-
-.class ul {
-    list-style-type: none;
-    padding: 0;
-    
-}
-
-.class ul li {
-    
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 5px;
-    width: 50%;
-}
 
 /*About us section*/
 
@@ -184,14 +139,30 @@ h1, h2, h3{
     transform: scale(1.05);
 }
 
+#new-contact{
+    justify-content: center;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
+}
+#new-contact i{
+    font-size: 160%;
+    padding: 5%;
+    color: #FFD43B;
+    
 
-
+}
 
 
 /*Sign up form- section*/
 #signup-form{
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.066);
 }
 .signup-container{
     display: flex;
@@ -206,35 +177,53 @@ h1, h2, h3{
 }
 .signbuttons .btn-dark{
     margin-right: 10px;
+    font-size: larger;
 }
 /*Footer*/
 #contact{
     background-color:rgb(39, 39, 41);
     color: white;
+    padding-top: 10px;
 }
 #contact .table-dark * {
     background-color: transparent;
+    padding-top: 10px;
 }
+
+
+#new-contact{
+    justify-content: center;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
+}
+#new-contact i{
+    font-size: 160%;
+    padding: 5%;
+    color: #FFD43B;
+}
+/*newsletter*/
+#newsletter-form{
+    background-color: rgb(248, 246, 242);
+    color:black;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border:10px;
+    border-radius: 5px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     #cover-text p {
         width: 80%;  /* Öka bredden på mindre skärmar */
     }
-    .class {
-        padding: 15px;
-    }
-
-    .section-title {
-        font-size: 2em;
-    }
-
-    .class h2 {
-        font-size: 1.8em;
-    }
     
-    .class h3 {
-        font-size: 1.3em;
-    }
    
 }
 
@@ -263,6 +252,5 @@ h1, h2, h3{
     }
     
 }
-@media screen and (min-width:290px){
-    
-}
+
+
