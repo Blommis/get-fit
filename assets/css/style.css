@@ -89,72 +89,49 @@ h1, h2, h3{
 }
 
 /*Classes section*/
-#class-table {
-    width: 100%;
-    padding: 40px 5%;
-    background-color: #f8f9fa;
-}
-
-.class-container {
+.class-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
-    align-items: center;
-}
-
-.class-text {
-    flex: 1;
-    min-width: 200px;
-}
-
-.class-text h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.class-text p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.table-container {
-    flex: 2;
-    min-width: 400px;
-    overflow-x: auto;
     
+    margin-top: 50px;
 }
-
+.class-text{
+    text-align: center;
+    max-width:500px;
+}
+.table{
+    color: black;
+}
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
 }
-
-.schedule-table th,
+.schedule-table th, 
 .schedule-table td {
-    padding: 12px 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #333; /* Lägg till linjer mellan cellerna */
+    
     text-align: center;
+}
+.schedule-table th {
+    background-color: rgb(39, 39, 41);
+    color: white;
+    font-weight: bold;
     
 }
 
-.schedule-table th {
-    background-color: #FFD43B;
-    color: #333;
-    font-weight: bold;
-}
-
-.schedule-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 .schedule-table td {
-    color: #444;
+    background-color: rgb(243, 243, 240);
+    color: black;
 }
-
-.schedule-table th:first-child {
-    background-color: #ffcc00;
+.table-container{
+    margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 /*About us section*/
@@ -209,23 +186,7 @@ h1, h2, h3{
     transform: scale(1.05);
 }
 
-#new-contact{
-    justify-content: center;
-    padding:20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap:60px;
-    justify-content: space-evenly;
-    text-align: center;
-    list-style-type: none;
-}
-#new-contact i{
-    font-size: 160%;
-    padding: 5%;
-    color: #FFD43B;
-    
 
-}
 
 
 /*Sign up and sign in section*/
@@ -262,13 +223,16 @@ h1, h2, h3{
     padding-top: 10px;
     
 }
+
 .opening-times{
     text-align: center;
+    
 }
 #contact .table-dark * {
     background-color: transparent;
     padding-top: 10px;
 }
+
 
 
 #new-contact{
@@ -318,28 +282,13 @@ h1, h2, h3{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #cover-text p {
-        width: 80%;  /* Öka bredden på mindre skärmar */
+        width: 80%;  
     }
-    .class-container {
-        flex-direction: column;
-        flex-wrap: wrap;
+    .opening-times{
         text-align: center;
-    }
-    .class-text p{
-        position: relative;
-        right: 50px;
-    }
-    .class-text h2{
-        position: relative;
-        right: 50px;
-    }
-    .schedule-table {
-            
-        width: 60%;
-        font-size:0.6rem;
-        
+        margin-top: 60px;
     }
 }
 
@@ -347,11 +296,21 @@ h1, h2, h3{
 @media screen and (min-width: 660px){
 #hero{
     max-height: 500px;
+    
 }
 
-
-
 }
+@media screen and (min-width: 845px) {
+    
+    .schedule-table th, 
+    .schedule-table td {
+    border: 1px solid #333; /* Lägg till linjer mellan cellerna */
+    padding: 15px 20px;
+    text-align: center;
+    }
+    
+}
+
 @media screen and (min-width: 400px){
     .signup-container{
         display: flex;
