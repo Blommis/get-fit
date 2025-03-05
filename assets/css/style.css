@@ -89,55 +89,73 @@ h1, h2, h3{
 }
 
 /*Classes section*/
-#class-table{
-    width:100%;
-    padding:40px 5%;
-    
+#class-table {
+    width: 100%;
+    padding: 40px 5%;
+    background-color: #f8f9fa;
 }
-.class-container{
+
+.class-container {
     display: flex;
     flex-wrap: wrap;
-    gap:50px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.class-text {
+    flex: 1;
+    min-width: 200px;
+}
+
+.class-text h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.class-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.table-container {
+    flex: 2;
+    min-width: 400px;
+    overflow-x: auto;
     
 }
-.class-text {
-    flex:1;
-    min-width: 300px;
-}
-.table-container{
-    flex:2;
-    min-width: 200px;
-    max-width: 100%;
-    overflow-x: auto;
-}
-.schedule-table{
-    width: 80%;
-    border-collapse: collapse;
 
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
 }
+
 .schedule-table th,
-.schedule-table td{
-    padding:7px;
+.schedule-table td {
+    padding: 12px 5px;
     border: 1px solid #ddd;
     text-align: center;
+    
 }
-.schedule-table th{
-    background-color: #ffd43b;
+
+.schedule-table th {
+    background-color: #FFD43B;
     color: #333;
     font-weight: bold;
 }
-.schedule-table tr:nth-child(even){
+
+.schedule-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-.schedule-table td{
+
+.schedule-table td {
     color: #444;
 }
-.schedule-table th:first-child{
+
+.schedule-table th:first-child {
     background-color: #ffcc00;
 }
-
 
 /*About us section*/
 
@@ -213,6 +231,7 @@ h1, h2, h3{
 /*Sign up and sign in section*/
 #signup{
     margin-top: 70px;
+    
 }
 #signup-form{
     display: flex;
@@ -228,6 +247,7 @@ h1, h2, h3{
 }
 .sign-upinfo{
     text-align: center;
+    
      
 }
 .signbuttons .btn-dark{
@@ -293,16 +313,7 @@ h1, h2, h3{
     font-size: 1rem;
 }
 
-#success-message {
-    display: none;
-    
-    font-size: larger;
-    margin-top: 10px;
-}
 
-:target#success-message {
-    display: block;
-}
 
 
 
@@ -311,25 +322,27 @@ h1, h2, h3{
     #cover-text p {
         width: 80%;  /* Öka bredden på mindre skärmar */
     }
-    .class-container{
+    .class-container {
         flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
-        width: 100%;
     }
     .class-text p{
-        max-width: 100%;
-        font-size: smaller;
+        position: relative;
+        right: 50px;
+    }
+    .class-text h2{
+        position: relative;
+        right: 50px;
+    }
+    .schedule-table {
+            
+        width: 60%;
+        font-size:0.6rem;
         
     }
-    .schedule-table{
-        font-size: 0.9rem;
-        width: 100%;
-        justify-content: center;
-        padding-left: 10px;
-    }
-    
-   
 }
+
 
 @media screen and (min-width: 660px){
 #hero{
@@ -356,5 +369,3 @@ h1, h2, h3{
     }
     
 }
-
-
