@@ -106,12 +106,14 @@ h1, h2, h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     
     margin-top: 50px;
 }
 .class-text{
     text-align: center;
-    max-width:500px;
+    max-width:400px;
+
 }
 .table{
     color: black;
@@ -123,11 +125,12 @@ h1, h2, h3{
     border-radius: 10px;
     overflow: hidden;
     border-collapse: collapse;
+   
 }
 .schedule-table th, 
 .schedule-table td {
     border: 1px solid #333; /* Lägg till linjer mellan cellerna */
-    
+    padding: 5px;
     text-align: center;
 }
 .schedule-table th {
@@ -240,6 +243,7 @@ h1, h2, h3{
 
 
 /*Sign up and sign in section*/
+
 #signup{
     margin-top: 70px;
     
@@ -247,7 +251,10 @@ h1, h2, h3{
 #signup-form{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.066);
+    background-image: url("../images/kobe-kian-clata--dHkzk1w1nk-unsplash.jpg");
+    background-size: cover; /* Så att bilden täcker hela ytan */
+    background-position: center; /* Centrerar bilden */
+    background-repeat: no-repeat;
 }
 .signup-container{
     display: flex;
@@ -261,23 +268,27 @@ h1, h2, h3{
     
      
 }
+.signup-container label {
+    color: white; /* Gör texten vit */
+}
+.signup-container p {
+    color: white; /* Gör paragrafer vita */
+}
 .signbuttons .btn-dark{
     margin-right: 10px;
     font-size: larger;
+    margin-bottom: 20px;
 }
+
 /*Footer*/
 #contact{
     background-color:rgb(39, 39, 41);
-    
     color: white;
     padding-top: 10px;
     
 }
 
-.opening-times{
-    text-align: center;
-    
-}
+
 #contact .table-dark * {
     background-color: transparent;
     padding-top: 10px;
@@ -326,27 +337,26 @@ h1, h2, h3{
     margin-top: 10px;
     font-size: 1rem;
 }
-
-
-
-
-
-
-@media screen and (max-width: 767px) {
-    #cover-text p {
-        width: 80%;  
-    }
-    .opening-times{
-        text-align: center;
-        margin-top: 60px;
-    }
-    
-    
-     
-
-
-
+/*Social media icons*/
+#second-contact{
+    justify-content: center;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
 }
+#second-contact i{
+    font-size: 160%;
+    padding: 5%;
+    color: #FFD43B;
+}
+
+
+
+
 @media screen and (max-width:480px){
     #new-contact{
         display: flex;
@@ -358,7 +368,16 @@ h1, h2, h3{
         list-style-type: none;
     }
 }
+@media screen and (max-width: 768px){
+    #signup-form {
+        flex-direction: column;
+    }
 
+    .signup-image {
+        width: 100%;
+        min-height: 250px; /* Anpassa bildstorlek */
+    }
+}
 @media screen and (min-width: 660px){
 #hero{
     max-height: 500px;
@@ -366,13 +385,13 @@ h1, h2, h3{
 }
 
 }
-@media screen and (min-width: 845px) {
+@media screen and (min-width: 881px) {
     
     .schedule-table th, 
     .schedule-table td {
-    border: 1px solid #333; /* Lägg till linjer mellan cellerna */
-    padding: 15px 20px;
-    text-align: center;
+    border: 1px solid #333; 
+    padding: 15px 18px;
+    
     }
     
 }
@@ -396,6 +415,14 @@ h1, h2, h3{
 }
 
 @media (min-width: 768px) {
+
+    #cover-text p {
+        width: 80%;  
+    }
+    .opening-times{
+        text-align: center;
+        margin-top: 60px;
+    }
     #member-stories {
       padding: 40px 20px;
     }
