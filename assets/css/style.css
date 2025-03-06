@@ -22,14 +22,16 @@ h1, h2, h3{
 .navbar-brand i {
     font-size: 2rem; /* makes the logo bigger */
 }
-
+.navbar-brand span {
+    font-family: 'Racing Sans One', sans-serif;
+}
 .section{
     padding-top: 4rem; /*makes sure so the navbar doesn't overlap*/
 }
 /*Hero section*/
 
 #hero{
-    height:600px;
+    height:450px;
     width:100%; 
     background: url("../images/corey-young-XTktUgGYEkI-unsplash.jpg") no-repeat center center/cover;
     position: relative;
@@ -38,7 +40,7 @@ h1, h2, h3{
 
 #cover-text{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -48,12 +50,7 @@ h1, h2, h3{
             flex-direction: column;
     
 }
-#cover-text h1{
-    font-size: 80px;
-    display: inline-block;
-    
-    
-}
+
 
 #cover-text p {
     width: 50%;
@@ -76,17 +73,18 @@ h1, h2, h3{
 
 .btn-dark {
     background-color: #FFD43B;
+    color: black;
 }
 
 /*Productcards section*/
 .silver-title{
-    color:silver;
+    color:rgb(92, 91, 91);
 }
 .gold-title{
     color:gold;
 }
 .pricetag{
-    color: red;
+    color: rgb(240, 30, 30);
     font-size: larger;
 }
 .card-body{
