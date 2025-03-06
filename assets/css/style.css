@@ -60,15 +60,7 @@ h1, h2, h3{
     gap: 110px;
     justify-content: center;
 }
-.discount-text {
-    background-color: orange;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px 20px;
-    text-align: center; 
-    margin: 0 auto; 
-    
-}
+
 .btn-dark {
     background-color: #FFD43B;
 }
@@ -113,7 +105,13 @@ h1, h2, h3{
 .class-text{
     text-align: center;
     max-width:400px;
-
+    
+}
+.class-text p{
+    width: 90%;
+    margin: 0 auto;  /* Centers the paragraph horizontally */
+    display: block;  /* Ensures paragraph is displayed as a block */
+    margin-bottom: 10px;
 }
 .table{
     color: black;
@@ -129,7 +127,7 @@ h1, h2, h3{
 }
 .schedule-table th, 
 .schedule-table td {
-    border: 1px solid #333; /* Lägg till linjer mellan cellerna */
+    border: 1px solid #333; /* add on line between the "boxes" */
     padding: 5px;
     text-align: center;
 }
@@ -254,8 +252,8 @@ h1, h2, h3{
     display: flex;
     flex-direction: column;
     background-image: url("../images/kobe-kian-clata--dHkzk1w1nk-unsplash.jpg");
-    background-size: cover; /* Så att bilden täcker hela ytan */
-    background-position: center; /* Centrerar bilden */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
 }
 .signup-container{
@@ -271,10 +269,10 @@ h1, h2, h3{
      
 }
 .signup-container label {
-    color: white; /* Gör texten vit */
+    color: white; 
 }
 .signup-container p {
-    color: white; /* Gör paragrafer vita */
+    color: white; 
 }
 .signbuttons .btn-dark{
     margin-right: 10px;
@@ -358,6 +356,7 @@ h1, h2, h3{
 
 
 
+/*Media query*/
 
 @media screen and (max-width:480px){
     #new-contact{
@@ -377,8 +376,10 @@ h1, h2, h3{
 
     .signup-image {
         width: 100%;
-        min-height: 250px; /* Anpassa bildstorlek */
+        min-height: 250px; 
     }
+    
+    
 }
 @media screen and (min-width: 660px){
 #hero{
