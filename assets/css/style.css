@@ -166,7 +166,6 @@ h1, h2, h3{
 
 /*Member stories*/
 #member-stories {
-    
     padding: 20px;
     text-align: center;
   }
@@ -217,31 +216,31 @@ h1, h2, h3{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exakt tre kolumner */
-    gap: 10px; /* Lite större mellanrum */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumner */
+    gap: 10px;
+}
+
+/* Styling for the list items */
+.gallery-item {
+    display: flex;
+    justify-content: center; /* Centrerar bilderna */
+    align-items: center;
 }
 
 /* Styling for the images */
 .gallery-item img {
-    width: 100%;
+    width: 70%; /* Gör bilderna mindre */
     height: auto;
+    display: block;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Anpassning för mindre skärmar */
-@media (max-width: 768px) {
-    .gallery-list {
-        grid-template-columns: repeat(2, 1fr); /* Två bilder per rad på mindre skärmar */
-    }
-}
 
-@media (max-width: 480px) {
-    .gallery-list {
-        grid-template-columns: repeat(1, 1fr); /* En bild per rad på väldigt små skärmar */
-    }
-}
+
+
+
 
 
 
