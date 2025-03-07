@@ -202,6 +202,7 @@ h1, h2, h3{
   
       
   #gallery {
+   
     padding: 20px;
     text-align: center;
 }
@@ -219,13 +220,13 @@ h1, h2, h3{
 
 /* Styling for the list items */
 .gallery-item {
-    display: inline-block; /* Gör att bilderna visas bredvid varandra */
-    margin: 5px; /* Litet mellanrum mellan bilderna */
+    display: inline-block; 
+    margin: 5px; 
 }
 
 /* Styling for the images */
 .gallery-item img {
-    width: 300px; /* Gör bilderna mindre */
+    width: 300px; 
     height: auto;
     display: block;
     border-radius: 8px;
