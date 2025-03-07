@@ -379,7 +379,7 @@ h1, h2, h3{
         min-height: 250px; 
     }
     .gallery-item img {
-        width: 200px; /* Gör bilderna mindre */
+        width: 200px; 
         height: auto;
         display: block;
         border-radius: 8px;
