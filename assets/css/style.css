@@ -215,32 +215,23 @@ h1, h2, h3{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolumner */
-    gap: 10px;
 }
 
 /* Styling for the list items */
 .gallery-item {
-    display: flex;
-    justify-content: center; /* Centrerar bilderna */
-    align-items: center;
+    display: inline-block; /* Gör att bilderna visas bredvid varandra */
+    margin: 5px; /* Litet mellanrum mellan bilderna */
 }
 
 /* Styling for the images */
 .gallery-item img {
-    width: 70%; /* Gör bilderna mindre */
+    width: 300px; /* Gör bilderna mindre */
     height: auto;
     display: block;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
-
-
-
-
-
 
 
 
@@ -386,6 +377,14 @@ h1, h2, h3{
         width: 100%;
         min-height: 250px; 
     }
+    .gallery-item img {
+        width: 200px; /* Gör bilderna mindre */
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
     
     
 }
@@ -468,9 +467,7 @@ h1, h2, h3{
       #cover-text{
         margin-top: 170px;
     }
-    .gallery-list {
-        grid-template-columns: repeat(2, 1fr); /* Två bilder per rad på mindre skärmar */
-    }
+  
       
   }
 
