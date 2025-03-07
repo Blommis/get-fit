@@ -7,8 +7,12 @@
     <title>Get Fit</title>
 
     <!--Boostrap css link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
     <!--css link-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -43,36 +47,36 @@
             </div>
           </nav>
     </nav>
-    <header id="hero" aria-label="A man performing squats as part of a fitness workout">
+    <header id="hero" aria-label="A man performing squats as part of a fitness workout" role="img">
         
         <div id="cover-text">
             <h2>Transform Your Fitness Journey with Us!</h2>
             <br>
              <p> <strong>Sign up today and get 20% off your membership!</strong></p>
         </div>
-        <br>
+        
         <div class="hero-button">
               <a href="signup.html" class="btn btn-dark btn-lg">Sign me up</a>
         </div>
             
     </header>
     
-    <br>
+    
   <!-- main content -->
   <main>
     <section id="productcards" class="container">
         <h2 class="text-center display-6 my-4">Our Memberships</h2>
+        <p class="text-center"><strong>To purchase a membership, please visit our gym.</strong></p>
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/images/photo-1589860518300-9eac95f784d9.avif" class="card-img-top" alt="A close-up image of running shoes with a black weight next to them">
+                <div class="card h-100 text-center">
+                    <div class="card-header text-white" style="background-color: #2D89EF;">
+                        <h2 style="color: black;" >Basic</h2>
+                    </div>
                     <div class="card-body">
-                        <h2>Basic</h2>
                         <div class="card-text">
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Access to the gym during staffed hours</p>
-                            
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Group fitness classes included</p>
-                            
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Free introduction with a personal trainer</p>
                             <p class="pricetag"> <strong>€29 per month</strong></p>
                         </div>
@@ -80,41 +84,38 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/images/photo-1690731824019-83ad76c6b678.avif" class="card-img-top" alt="A muscular man performing an exercise on a cable machine in the gym.">
+                <div class="card h-100 text-center">
+                    <div class="card-header text-white" style="background-color: #A6A6A6;">
+                        <h2 style="color: black;">Silver</h2>
+                    </div>
                     <div class="card-body">
-                        <h2 class="silver-title">Silver</h2>
                         <div class="card-text">
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Everything in Basic membership</p>
-                            
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> 24/7 gym access. Anytime, day or night</p>
-                            
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Discount on personal training</p>
                             <p class="pricetag"> <strong>€49 per month</strong></p>
-
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="assets/images/photo-1648542036561-e1d66a5ae2b1.avif" class="card-img-top" alt="A man exercising with battle ropes in a parking garage.">
+                <div class="card h-100 text-center">
+                    <div class="card-header text-white" style="background-color: #FFD700;">
+                        <h2 style="color: black;">Gold</h2>
+                    </div>
                     <div class="card-body">
-                        <h2 class="gold-title">Gold</h2>
                         <div class="card-text">
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Everything in Silver membership</p>
-                            
                             <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Free access to spa and sauna</p>
-                            
-                            <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i>Free nutrition and training plans</p>
+                            <p><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Free nutrition and training plans</p>
                             <p class="pricetag"> <strong>€69 per month</strong></p>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
     <section id="class-table">
         <div class="class-container">
@@ -275,9 +276,9 @@
     
     
     <!--Bootstrap JS link-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <!--font awesome link-->
-    <script src="https://kit.fontawesome.com/e0a995d092.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e0a995d092.js" crossorigin="anonymous" defer></script>
 
     <!--Since I'm using a Bootstrap navbar, I had to add an extra JavaScript code to
      ensure the navbar collapses on mobile devices when clicking on "Contact"
