@@ -195,7 +195,7 @@ h1, h2, h3{
     padding: 20px;
     text-align: center;
   }
-  #member-stories h2{
+  #member-stories h3{
     font-size: 200%;
   }
   .members {
@@ -228,13 +228,12 @@ h1, h2, h3{
   
       
   #gallery {
-   
     padding: 20px;
     text-align: center;
 }
 
 #gallery h2 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 /* Styling for the list */
